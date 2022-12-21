@@ -3,12 +3,14 @@ import HeaderVue from './components/HeaderVue.vue'
 import MainLogisticServices from './components/MainLogisticServices.vue'
 import MainCompanySection from './components/MainCompanySection.vue'
 import MainLogoSection from './components/MainLogoSection.vue'
+import MainNewsSection from './components/MainNewsSection.vue'
 export default {
   components: {
     HeaderVue,
     MainLogisticServices,
     MainCompanySection,
-    MainLogoSection
+    MainLogoSection,
+    MainNewsSection
   }
 }
 </script>
@@ -22,6 +24,7 @@ export default {
     <MainLogisticServices />
     <MainCompanySection />
     <MainLogoSection />
+    <MainNewsSection />
   </main>
 
 </template>

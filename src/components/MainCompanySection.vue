@@ -30,7 +30,7 @@ export default {
     <div class="container">
         <div class="inner-contText">
             <div class="inner-cont">
-                <div class="text1">ABOUT THE NETWORK</div>
+                <div class="text-green">ABOUT THE NETWORK</div>
                 <div class="title">
                     <span>THE</span> COMPANY
                 </div>
@@ -102,11 +102,8 @@ export default {
             width: 60%;
             // background-color: rebeccapurple;
 
-            .text1 {
-                font-size: 15px;
-                color: $color-type-button;
-                margin-bottom: 20px;
-                font-weight: bold;
+            .text-green {
+                @include green-text
             }
 
             .title {
@@ -125,8 +122,7 @@ export default {
             }
 
             .subtitle {
-                font-size: 18px;
-                color: #8e8e8e;
+                @include subtitle-text;
                 margin: 40px 0px;
             }
 
@@ -175,8 +171,7 @@ export default {
                     }
 
                     .paragraph {
-                        font-size: 18px;
-                        color: #8e8e8e;
+                        @include subtitle-text;
                     }
                 }
 

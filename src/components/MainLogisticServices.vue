@@ -25,7 +25,7 @@ export default {
     <div class="container">
         <div class="inner-cont">
             <div class="card">
-                <div class="text1">OUR BUSINESS AREAS</div>
+                <div class="text-green">OUR BUSINESS AREAS</div>
                 <div class="text-title">LOGISTICS SERVICES</div>
                 <div class="paragraph">
                     We are leaders in providing logistics services with a set of cutting edge technologies and a team of
@@ -101,11 +101,8 @@ export default {
             height: 100%;
             // background-color: burlywood;
 
-            .text1 {
-                font-size: 15px;
-                color: $color-type-button;
-                margin-bottom: 20px;
-                font-weight: bold;
+            .text-green {
+                @include green-text
             }
 
             .text-title {
@@ -117,8 +114,7 @@ export default {
 
             .paragraph {
                 width: 85%;
-                font-size: 18px;
-                color: #8e8e8e;
+                @include subtitle-text;
                 margin-bottom: 20px;
             }
 
@@ -188,8 +184,7 @@ export default {
                 .subtitle {
                     width: 100%;
                     height: 40%;
-                    font-size: 18px;
-                    color: #8e8e8e;
+                    @include subtitle-text;
 
                 }
 

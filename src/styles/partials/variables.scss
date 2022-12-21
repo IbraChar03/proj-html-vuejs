@@ -39,3 +39,24 @@ $font-type : 15px;
     z-index: 50;
 
 }
+
+@mixin green-text {
+    font-size: 15px;
+    color: $color-type-button;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+@mixin background-text {
+    background-color: rgba(5, 130, 131, 0.3);
+    padding: 7px 10px;
+    border-radius: 5px;
+
+}
+
+@mixin subtitle-text {
+    font-size: 18px;
+    color: #8e8e8e;
+
+}
