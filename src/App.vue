@@ -5,6 +5,7 @@ import MainCompanySection from './components/MainCompanySection.vue'
 import MainLogoSection from './components/MainLogoSection.vue'
 import MainNewsSection from './components/MainNewsSection.vue'
 import MainNewsLetterSection from './components/MainNewsLetterSection.vue'
+import MainMessageSection from './components/MainMessageSection.vue'
 export default {
   components: {
     HeaderVue,
@@ -12,7 +13,8 @@ export default {
     MainCompanySection,
     MainLogoSection,
     MainNewsSection,
-    MainNewsLetterSection
+    MainNewsLetterSection,
+    MainMessageSection
   }
 }
 </script>
@@ -28,6 +30,7 @@ export default {
     <MainLogoSection />
     <MainNewsSection />
     <MainNewsLetterSection />
+    <MainMessageSection />
   </main>
 
 </template>
