@@ -47,7 +47,7 @@ export default {
 .container {
     padding: 100px;
     @include container;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/bg-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/bg-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

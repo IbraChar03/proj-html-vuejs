@@ -96,8 +96,10 @@ export default {
       <div class="cont-inner">
         <div class="logistics">
           <div class="textBig">
-            Logistics that goes Further.
+            <span>Logistics that goes Further.</span>
+            <div class="back"></div>
           </div>
+
           <div class="text">
             For 20 years working with the most innovative in the field of transport
           </div>
@@ -298,9 +300,25 @@ export default {
         // background-color: red;
 
         .textBig {
-          font-size: 80px;
-          color: white;
-          font-weight: bold;
+
+          position: relative;
+
+          span {
+            font-size: 80px;
+            color: white;
+            font-weight: bold;
+            z-index: 50;
+            position: relative;
+          }
+
+          .back {
+            position: absolute;
+            top: 20%;
+            width: 80%;
+            height: 30px;
+            background-color: rgba(5, 130, 131, 0.3);
+            z-index: 0;
+          }
 
         }
 

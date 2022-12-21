@@ -188,7 +188,7 @@ export default {
                 // padding: 12px 12px;
                 height: 40px;
                 width: 40px;
-                background-color: rgba(5, 130, 131, 0.3);
+                background-color: rgba(5, 130, 131, 0.1);
                 vertical-align: middle;
                 margin-right: 10px;
                 object-fit: cover;

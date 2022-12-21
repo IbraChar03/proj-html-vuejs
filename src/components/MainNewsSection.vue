@@ -64,7 +64,7 @@ export default {
 
 .container {
     @include container;
-    padding: 50px;
+    padding: 100px;
 
     .inner-cont {
         max-width: 1400px;

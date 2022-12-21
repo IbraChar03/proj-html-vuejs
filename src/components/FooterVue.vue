@@ -183,7 +183,7 @@ export default {
 
     .inner-cont {
         max-width: 1400px;
-        width: 60%;
+        width: 65%;
         height: 60%;
         display: flex;
         // background-color: red;
@@ -209,21 +209,17 @@ export default {
                 }
 
                 span {
-                    color: white;
+                    color: #c0c3d0;
                     font-size: 25px;
                     font-weight: bold;
                 }
 
-                p {
-                    font-size: 17px;
-                    color: white;
-                }
             }
 
             .subtitle {
                 margin-top: 15px;
-                width: 80%;
-                color: white;
+                width: 100%;
+                color: #c0c3d0;
                 font-size: 18px;
                 margin-bottom: 20px;
             }
@@ -237,13 +233,13 @@ export default {
 
                     .icon {
                         font-size: 15px;
-                        color: white;
+                        color: #c0c3d0;
                         margin-right: 10px;
                     }
 
                     span {
                         font-size: 18px;
-                        color: white;
+                        color: #c0c3d0;
                     }
                 }
             }
@@ -259,7 +255,7 @@ export default {
                     text-align: center;
                     border: 1px solid $color-type-button;
                     border-radius: 5px;
-                    color: white;
+                    color: #c0c3d0;
                     margin-top: 10px;
                 }
             }
