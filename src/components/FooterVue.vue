@@ -155,6 +155,18 @@ export default {
         </div>
 
     </div>
+    <div class="footer">
+        <div class=container>
+            <div class="text">
+                Enjoy the low price. We are tracking any intention of privacy.
+            </div>
+            <div class="text">
+                &#169; NEXGEN is Proudly Powered by <span>Codings</span>.
+            </div>
+
+        </div>
+
+    </div>
 
 </template>
 
@@ -258,6 +270,7 @@ export default {
             margin: 0px 10px;
             height: 100%;
             background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -294,5 +307,33 @@ export default {
         }
     }
 
+}
+
+.footer {
+    width: 100%;
+    // height: 50px;
+    padding: 20px;
+    background-color: #08080a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .text {
+            font-size: 15px;
+            color: $color-type ;
+
+            span {
+                font-size: 15px;
+                color: $color-type-button;
+            }
+        }
+    }
 }
 </style>

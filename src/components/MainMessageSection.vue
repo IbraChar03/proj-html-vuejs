@@ -117,7 +117,8 @@ export default {
                 button {
                     margin-top: 20px;
                     @include btn;
-                    border: none
+                    border: none;
+                    cursor: pointer;
                 }
 
                 input {
