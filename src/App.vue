@@ -4,13 +4,15 @@ import MainLogisticServices from './components/MainLogisticServices.vue'
 import MainCompanySection from './components/MainCompanySection.vue'
 import MainLogoSection from './components/MainLogoSection.vue'
 import MainNewsSection from './components/MainNewsSection.vue'
+import MainNewsLetterSection from './components/MainNewsLetterSection.vue'
 export default {
   components: {
     HeaderVue,
     MainLogisticServices,
     MainCompanySection,
     MainLogoSection,
-    MainNewsSection
+    MainNewsSection,
+    MainNewsLetterSection
   }
 }
 </script>
@@ -25,6 +27,7 @@ export default {
     <MainCompanySection />
     <MainLogoSection />
     <MainNewsSection />
+    <MainNewsLetterSection />
   </main>
 
 </template>
