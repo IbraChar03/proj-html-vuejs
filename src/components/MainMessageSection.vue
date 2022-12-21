@@ -56,10 +56,10 @@ export default {
                     <div class="cont-icon">
                         <font-awesome-icon :icon="item.icon" class="icon" />
                     </div>
-                    <span>{{ item.text }}</span>
+                    <a href=""> <span>{{ item.text }}</span> </a>
 
                 </div>
-                <a href="">
+                <a href="" class="button">
                     <span>VIEW MAP</span>
                 </a>
             </div>
@@ -197,6 +197,9 @@ export default {
                 align-items: center;
 
 
+
+
+
                 .icon {
                     font-size: 18px;
                     color: $color-type-button;
@@ -205,15 +208,19 @@ export default {
                 }
             }
 
+            a {
+                margin-top: 8px;
+                text-decoration: none;
+            }
+
 
             span {
-                margin-top: 8px;
                 font-size: 19px;
                 color: $color-type-button;
             }
         }
 
-        a {
+        .button {
             text-decoration: none;
 
             span {
