@@ -74,12 +74,12 @@ export default {
 @use "../styles/partials/variables.scss" as *;
 
 .container {
-    // height: 850px;
     padding: 50px;
     background-color: $color-background;
     @include container;
 
     .inner-cont {
+        max-width: 1400px;
         width: 60%;
         height: 80%;
         // background-color: red;

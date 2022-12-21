@@ -64,13 +64,12 @@ export default {
 
 .container {
     @include container;
-    // height: 850px;
     padding: 50px;
 
     .inner-cont {
+        max-width: 1400px;
         width: 60%;
         height: 80%;
-
 
         .text {
             width: 100%;

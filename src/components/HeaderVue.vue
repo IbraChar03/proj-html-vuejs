@@ -37,6 +37,7 @@ export default {
   <div class="headerContacts">
     <div class="inner-contHeader">
       <div class="open-hours">
+
         <font-awesome-icon icon="fa-solid fa-clock" class="icon" />
         <p>Open Hours: Mon - Sat - 9:00 - 18:00</p>
       </div>
@@ -69,6 +70,7 @@ export default {
         <div class="nexgen">
           <span class="color">N E X </span>&nbsp <span> G E N</span>
         </div>
+
         <div class="list">
           <ul>
             <li v-for="item in list">
@@ -136,6 +138,7 @@ export default {
   align-items: center;
 
   .inner-contHeader {
+    max-width: 1400px;
     width: 60%;
     height: 100%;
     // background-color: aquamarine;
@@ -204,6 +207,7 @@ export default {
     z-index: 1000;
 
     .inner-header {
+      max-width: 1400px;
       height: 100%;
       width: 60%;
       // background-color: azure;
@@ -279,6 +283,7 @@ export default {
     margin-top: 50px;
 
     .cont-inner {
+      max-width: 1400px;
       width: 50%;
       height: 100%;
       display: flex;

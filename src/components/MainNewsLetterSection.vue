@@ -46,7 +46,6 @@ export default {
 
 .container {
     padding: 100px;
-    // height: 450px;
     @include container;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/bg-1.jpg");
     background-repeat: no-repeat;
@@ -54,6 +53,7 @@ export default {
     background-size: cover;
 
     .inner-cont {
+        max-width: 1400px;
         width: 50%;
         height: 80%;
         // background-color: red;

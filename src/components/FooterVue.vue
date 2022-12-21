@@ -174,14 +174,15 @@ export default {
 @use "../styles/partials/variables.scss" as *;
 
 .jumbotron {
-    height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/bg-10.jpg");
+    padding: 130px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/bg-10.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     @include container;
 
     .inner-cont {
+        max-width: 1400px;
         width: 60%;
         height: 60%;
         display: flex;
@@ -269,7 +270,8 @@ export default {
             width: calc(100% / 4 - 10px);
             margin: 0px 10px;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px 0px;
+            background-color: rgba(255, 255, 255, 0.02);
             border-radius: 5px;
             display: flex;
             justify-content: center;
@@ -291,13 +293,13 @@ export default {
                     list-style-type: none;
 
                     a {
-                        color: white;
-                        font-size: 20px;
+                        color: #c0c3d0;
+                        font-size: 19px;
                         text-decoration: none;
 
                         .icon {
                             font-size: 15px;
-                            color: white;
+                            color: #c0c3d0;
                         }
                     }
                 }
@@ -319,6 +321,7 @@ export default {
     align-items: center;
 
     .container {
+        max-width: 1400px;
         width: 60%;
         height: 100%;
         display: flex;

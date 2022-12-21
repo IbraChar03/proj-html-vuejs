@@ -6,17 +6,20 @@ export default {
                 {
                     percentage: "0",
                     title: "Leadership",
-                    subtitle: " Lorem ipsum dolor sit amet consectetur adipiscing elit."
+                    subtitle: " Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    active: false
                 },
                 {
                     percentage: "0",
                     title: "Psychology",
-                    subtitle: " Lorem ipsum dolor sit amet consectetur adipiscing elit."
+                    subtitle: " Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    active: false
                 },
                 {
                     percentage: "1",
                     title: "Flexibility",
-                    subtitle: " Lorem ipsum dolor sit amet consectetur adipiscing elit."
+                    subtitle: " Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+                    active: true
                 }
             ]
 
@@ -41,6 +44,7 @@ export default {
                     <div class="percentage">
                         <div class="circle">
                             {{ item.percentage }} <span>%</span>
+                            <div class="border" :class="{ margin: item.active }"></div>
                         </div>
                     </div>
                     <div class="content">
@@ -98,6 +102,7 @@ export default {
         z-index: 1;
 
         .inner-cont {
+            max-width: 1400px;
             height: 80%;
             width: 60%;
             // background-color: rebeccapurple;
@@ -137,6 +142,8 @@ export default {
                 .percentage {
                     width: 30%;
 
+
+
                     .circle {
                         border-radius: 50%;
                         width: 90px;
@@ -158,7 +165,21 @@ export default {
                             color: white;
 
                         }
+
+                        .border {
+                            display: none;
+                        }
+
+                        .margin {
+                            right: 56px;
+                            position: relative;
+                            display: block;
+                            height: 1px;
+                            width: 8px;
+                            background-color: $color-type-button;
+                        }
                     }
+
                 }
 
                 .content {
@@ -172,7 +193,9 @@ export default {
 
                     .paragraph {
                         @include subtitle-text;
+
                     }
+
                 }
 
 
@@ -189,6 +212,7 @@ export default {
         z-index: 1;
 
         img {
+            max-width: 1400px;
             display: block;
             width: 100%;
             height: 100%;

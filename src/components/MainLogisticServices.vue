@@ -89,11 +89,10 @@ export default {
     }
 
     .inner-cont {
-        // @include inner-cont;
+        max-width: 1400px;
         width: 70%;
         height: 420px;
         display: flex;
-        // background-color: red;
 
         .card {
             width: calc(100% / 3);
