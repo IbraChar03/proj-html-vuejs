@@ -77,8 +77,7 @@ export default {
     @include container;
     // height: 700px;
     padding: 150px;
-
-    background-color: #eef4ed;
+    background-color: $color-background;
     position: relative;
 
     .grip {
