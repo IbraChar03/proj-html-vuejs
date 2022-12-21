@@ -204,18 +204,6 @@ export default {
                 }
             }
 
-            // .icon {
-            //     font-size: 18px;
-            //     color: $color-type-button;
-            //     display: inline-block;
-            //     border-radius: 50%;
-            //     padding: 12px 12px;
-
-            //     background-color: rgba(5, 130, 131, 0.3);
-            //     vertical-align: middle;
-            //     margin-right: 5px;
-            //     object-fit: fill;
-            // }
 
             span {
                 margin-top: 8px;
