@@ -1,11 +1,13 @@
 $color-type : #c0c3d0;
 $color-type-button : #058283;
+$color-type-title : #21333e;
 $font-type : 15px;
 
 @mixin btn {
     padding: 12px 18px;
     background-color: $color-type-button;
     border-radius: 5px;
+    color: white;
 }
 
 @mixin container {

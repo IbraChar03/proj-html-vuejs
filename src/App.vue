@@ -1,10 +1,12 @@
 <script >
 import HeaderVue from './components/HeaderVue.vue'
 import MainLogisticServices from './components/MainLogisticServices.vue'
+import MainCompanySection from './components/MainCompanySection.vue'
 export default {
   components: {
     HeaderVue,
-    MainLogisticServices
+    MainLogisticServices,
+    MainCompanySection
   }
 }
 </script>
@@ -16,6 +18,7 @@ export default {
 
   <main>
     <MainLogisticServices />
+    <MainCompanySection />
   </main>
 
 </template>

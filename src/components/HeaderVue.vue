@@ -119,7 +119,8 @@ export default {
 @use "../styles/partials/variables.scss" as *;
 
 .headerContacts {
-  height: 50px;
+  // height: 50px;
+  padding: 15px;
   width: 100%;
   background-color: #21333e;
   display: flex;
@@ -177,7 +178,8 @@ export default {
 }
 
 .jumbotron {
-  height: 700px;
+  // height: 700px;
+  padding-bottom: 70px;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/jumbo.jpg");
   background-position: center;
