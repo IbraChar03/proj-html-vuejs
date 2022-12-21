@@ -100,8 +100,16 @@ export default {
             For 20 years working with the most innovative in the field of transport
           </div>
           <div class="buttons">
-            <div class="btn1">GET IN TOUCH</div>
-            <div class="btn2">READ MORE</div>
+            <div class="btn1">
+              <a href="">
+                <span>GET IN TOUCH</span>
+              </a>
+            </div>
+            <div class="btn2">
+              <a href="">
+                <span>READ MORE</span>
+              </a>
+            </div>
           </div>
 
         </div>
@@ -303,20 +311,34 @@ export default {
           align-items: center;
 
           .btn1 {
-            background-color: $color-type-button;
-            padding: 11px 17px;
-            text-align: center;
-            margin-right: 15px;
-            border-radius: 5px;
-            color: white;
+            a {
+              text-decoration: none;
+
+              span {
+                background-color: $color-type-button;
+                padding: 11px 17px;
+                text-align: center;
+                margin-right: 15px;
+                border-radius: 5px;
+                color: white;
+              }
+            }
+
           }
 
           .btn2 {
-            padding: 10px 17px;
-            text-align: center;
-            border: 1px solid $color-type-button;
-            border-radius: 5px;
-            color: white;
+            a {
+              text-decoration: none;
+
+              span {
+                padding: 10px 17px;
+                text-align: center;
+                border: 1px solid $color-type-button;
+                border-radius: 5px;
+                color: white;
+              }
+            }
+
           }
         }
       }

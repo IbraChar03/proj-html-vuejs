@@ -22,3 +22,19 @@ $font-type : 15px;
     height: 60%;
     display: flex;
 }
+
+@mixin grip {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+
+}
+
+@mixin grip-icon {
+    font-size: 80px;
+    color: rgba(5, 130, 131, 0.3);
+    z-index: 50;
+
+}

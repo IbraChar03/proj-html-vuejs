@@ -37,7 +37,10 @@ export default {
                     <span>Security</span>
                 </div>
                 <div class="button">
-                    <span>READ MORE</span>
+                    <a href="">
+                        <span>READ MORE</span>
+                    </a>
+
                 </div>
 
             </div>
@@ -79,14 +82,10 @@ export default {
     position: relative;
 
     .grip {
-        position: absolute;
-        bottom: -5%;
-        left: 50%;
-        transform: translateX(-50%);
+        @include grip;
 
         .grip-icon {
-            font-size: 80px;
-            color: rgba(5, 130, 131, 0.3);
+            @include grip-icon
         }
     }
 
@@ -141,9 +140,14 @@ export default {
             }
 
             .button {
-                span {
-                    @include btn;
+                a {
+                    text-decoration: none;
+
+                    span {
+                        @include btn;
+                    }
                 }
+
             }
         }
 
