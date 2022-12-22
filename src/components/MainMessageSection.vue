@@ -32,7 +32,11 @@ export default {
                     <label for="phone"></label>
                     <input type="text" id="phone" name="phone" placeholder="Phone">
                     <label for="info"></label>
-                    <input type="text" id="info" name="info" placeholder="More Info"><br>
+                    <select name="info" id="info" class="sel">
+                        <option value="" disabled selected hidden>More Info</option>
+                        <option value="volvo">Info 1</option>
+                        <option value="saab">Info 2</option>
+                    </select> <br>
                     <label for="message"></label>
                     <textarea name="message" id="message" cols="30" rows="8" placeholder="Message"></textarea>
                     <button>
@@ -139,6 +143,21 @@ export default {
 
                 }
 
+                .sel {
+                    width: calc(50% - 10px);
+                    margin-right: 10px;
+                    padding: 15px;
+                    border-radius: 5px;
+                    background: #dce2db;
+                    border: none;
+                    outline: none;
+                    color: #6c757d;
+                    font-size: 15px;
+                    background: url("/images/angle32.png") no-repeat right #dce2db;
+                    -webkit-appearance: none;
+                    background-position-x: 255px;
+                }
+
                 textarea {
                     width: 98.5%;
                     padding: 15px;
@@ -185,7 +204,6 @@ export default {
             .cont-icon {
                 // display: inline-block;
                 border-radius: 50%;
-                // padding: 12px 12px;
                 height: 40px;
                 width: 40px;
                 background-color: rgba(5, 130, 131, 0.1);
@@ -195,10 +213,6 @@ export default {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-
-
-
 
                 .icon {
                     font-size: 18px;
