@@ -124,7 +124,7 @@ export default {
           </div>
 
           <div class="text">
-            For 20 years working with the most innovative in the field of transport
+            For 20 years working with the most innovative in the field of transport.
           </div>
           <div class="buttons">
             <div class="btn1">

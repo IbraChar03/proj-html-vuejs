@@ -20,7 +20,7 @@ export default {
                     <span>KNOW</span> FIRST
                 </div>
                 <div class="subtitle">
-                    Follow closely and receive content about our company and the news of the current market
+                    Follow closely and receive content about our company and the news of the current market.
                 </div>
             </div>
             <div class="form">

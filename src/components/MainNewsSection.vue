@@ -38,7 +38,7 @@ export default {
                     LATEST <span>NEWS</span>
                 </div>
                 <div class="subtitle">
-                    <span>Every week we publish content about what is best in the business world</span>
+                    <span>Every week we publish content about what is best in the business world.</span>
 
                     <a href="">
                         <span>SEE ALL</span> </a>
@@ -135,10 +135,9 @@ export default {
 
             .card {
                 width: calc(100% / 3 - 20px);
-                padding: 150px;
+                padding: 170px 0px;
                 border-radius: 5px;
                 margin: 10px;
-                // height: 360px;
                 position: relative;
                 background-size: cover;
                 background-repeat: no-repeat;

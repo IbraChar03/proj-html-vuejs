@@ -22,7 +22,7 @@ export default {
                     Get in <span>Touch</span>
                 </div>
                 <div class="subtitle">
-                    We will respond to your message as soon as possible
+                    We will respond to your message as soon as possible.
                 </div>
                 <form>
                     <label for="name"></label>
