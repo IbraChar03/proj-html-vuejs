@@ -165,13 +165,19 @@ export default {
             </div>
 
         </div>
+        <a href="">
+            <span class="circle-arrow">
+                <font-awesome-icon icon="fa-solid fa-arrow-up" class="arrow" />
+            </span>
+        </a>
+
 
     </div>
 
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/variables.scss" as *;
+@use "../styles/partials/variables-mixin.scss" as *;
 
 .jumbotron {
     padding: 130px;
@@ -315,6 +321,36 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    .circle-arrow {
+        top: -20%;
+        right: 0;
+        position: absolute;
+        // display: inline-block;
+        border-radius: 50%;
+        // padding: 12px 12px;
+        height: 45px;
+        width: 45px;
+        background-color: rgba(255, 255, 255, 0.1);
+        vertical-align: middle;
+        margin-right: 10px;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+
+
+        .arrow {
+            font-size: 24px;
+            color: rgba(5, 130, 131, 0.1);
+            // vertical-align: middle;
+
+        }
+    }
 
     .container {
         max-width: 1400px;

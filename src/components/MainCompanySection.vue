@@ -2,24 +2,24 @@
 export default {
     data() {
         return {
-            obj: [
+            arrPercentage: [
                 {
                     percentage: "0",
                     title: "Leadership",
                     subtitle: " Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-                    active: false
+                    percent: false
                 },
                 {
                     percentage: "0",
                     title: "Psychology",
                     subtitle: " Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-                    active: false
+                    percent: false
                 },
                 {
                     percentage: "1",
                     title: "Flexibility",
                     subtitle: " Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-                    active: true
+                    percent: true
                 }
             ]
 
@@ -40,11 +40,11 @@ export default {
                 <div class="subtitle">
                     With all of this expertise and capability comes an unrivalled commitment to customer service.
                 </div>
-                <div class="section" v-for="item in obj">
+                <div class="section" v-for="item in arrPercentage">
                     <div class="percentage">
                         <div class="circle">
                             {{ item.percentage }} <span>%</span>
-                            <div class="border" :class="{ margin: item.active }"></div>
+                            <div class="border" :class="{ margin: item.percent }"></div>
                         </div>
                     </div>
                     <div class="content">
@@ -73,7 +73,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/variables.scss" as *;
+@use "../styles/partials/variables-mixin.scss" as *;
 
 .container {
     width: 100%;

@@ -43,7 +43,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/variables.scss" as *;
+@use "../styles/partials/variables-mixin.scss" as *;
 
 .container {
     @include container;

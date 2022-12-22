@@ -3,6 +3,10 @@ import { store } from "../store.js"
 export default {
   data() {
     return {
+      openHours: "Open Hours: Mon - Sat - 9:00 - 18:00",
+      phoneNumber: " +1 (305) 1234-5678",
+      email: "hello@example.com",
+      placePosition: "Main Avenue,987",
       store,
       list: [
         {
@@ -25,6 +29,19 @@ export default {
           name: "BLOG",
           href: "#"
         },
+      ],
+
+      arrSocials: [
+        {
+          icon: "fa-brands fa-facebook-f"
+        },
+        {
+          icon: "fa-brands fa-twitter"
+        },
+        {
+          icon: "fa-brands fa-linkedin-in"
+        },
+
       ]
 
     }
@@ -39,21 +56,30 @@ export default {
       <div class="open-hours">
 
         <font-awesome-icon icon="fa-solid fa-clock" class="icon" />
-        <p>Open Hours: Mon - Sat - 9:00 - 18:00</p>
+        <p>{{ openHours }}</p>
       </div>
       <div class="contacts">
         <div class="phone flex">
           <font-awesome-icon icon="fa-solid fa-phone" class="icon" />
-          <p>{{ store.phoneNumber }}</p>
+
+          <a href="">
+            <p>{{ phoneNumber }}</p>
+          </a>
         </div>
         <div class="email flex">
           <font-awesome-icon icon="fa-solid fa-envelope" class="icon" />
-          <p>{{ store.email }}</p>
+          <a href="">
+            <p>{{ email }}</p>
+          </a>
+
         </div>
         <div class="socials">
-          <font-awesome-icon icon="fa-brands fa-facebook-f" class="icon" />
-          <font-awesome-icon icon="fa-brands fa-twitter" class="icon" />
-          <font-awesome-icon icon="fa-brands fa-linkedin-in" class="icon" />
+          <span v-for="item in arrSocials">
+            <a href="">
+              <font-awesome-icon :icon="item.icon" class="icon" />
+            </a>
+
+          </span>
 
         </div>
 
@@ -128,7 +154,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/variables.scss" as *;
+@use "../styles/partials/variables-mixin.scss" as *;
 
 .headerContacts {
   // height: 50px;
@@ -171,6 +197,10 @@ export default {
 
       .flex {
         display: flex;
+
+        a {
+          text-decoration: none;
+        }
       }
 
       .socials {
@@ -233,7 +263,7 @@ export default {
         }
 
         span {
-          color: white;
+          color: #c0c3d0;
           font-size: 25px;
           font-weight: bold;
         }
@@ -325,6 +355,7 @@ export default {
         .text {
           font-size: 23px;
           color: $color-type;
+          margin-bottom: 20px;
         }
 
         .buttons {
