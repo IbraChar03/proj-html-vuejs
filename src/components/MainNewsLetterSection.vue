@@ -29,10 +29,9 @@ export default {
                     <input type="text" id="name" name="name" placeholder="Name"><br>
                     <label for="email"></label>
                     <input type="text" id="email" name="email" placeholder="Email">
+                    <button>SUBSCRIBE</button>
                 </form>
-                <a href="">
-                    <span>SUBSCRIBE</span>
-                </a>
+
             </div>
 
         </div>
@@ -110,16 +109,15 @@ export default {
                     font-size: 16px;
                 }
 
-            }
+                button {
+                    @include btn;
+                    border: none;
+                    cursor: pointer;
 
-            a {
-                margin-top: 10px;
-                text-decoration: none;
-
-                span {
-                    @include btn
                 }
+
             }
+
         }
 
     }
