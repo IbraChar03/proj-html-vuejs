@@ -352,7 +352,7 @@ export default {
         height: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
 
         .text {
             font-size: 15px;

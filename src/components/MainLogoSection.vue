@@ -54,7 +54,7 @@ export default {
 
     .inner-cont {
         max-width: 1400px;
-        width: 50%;
+        width: 65%;
         height: 100%;
         // background-color: red;
         display: flex;

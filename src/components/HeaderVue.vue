@@ -291,7 +291,7 @@ export default {
             list-style-type: none;
 
             a {
-              color: white;
+              color: #ededed;
               font-size: 17px;
               text-decoration: none;
             }

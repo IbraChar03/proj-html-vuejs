@@ -156,6 +156,7 @@ export default {
                     background: url("/images/angle32.png") no-repeat right #dce2db;
                     -webkit-appearance: none;
                     background-position-x: 255px;
+                    cursor: pointer;
                 }
 
                 textarea {
