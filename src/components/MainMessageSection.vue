@@ -60,7 +60,7 @@ export default {
                     <div class="cont-icon">
                         <font-awesome-icon :icon="item.icon" class="icon" />
                     </div>
-                    <a href=""> <span>{{ item.text }}</span> </a>
+                    <a :href="item.href"> <span>{{ item.text }}</span> </a>
 
                 </div>
                 <a href="" class="button">

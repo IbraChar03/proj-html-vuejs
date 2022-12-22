@@ -122,7 +122,7 @@ export default {
 
                         <font-awesome-icon :icon="item.icon" class="icon" />
 
-                        <a href=""> <span>{{ item.text }}</span> </a>
+                        <a :href="item.href"> <span>{{ item.text }}</span> </a>
 
                     </div>
                 </div>

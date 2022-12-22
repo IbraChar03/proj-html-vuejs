@@ -4,9 +4,6 @@ export default {
   data() {
     return {
       openHours: "Open Hours: Mon - Sat - 9:00 - 18:00",
-      phoneNumber: " +1 (305) 1234-5678",
-      email: "hello@example.com",
-      placePosition: "Main Avenue,987",
       store,
       list: [
         {
@@ -59,19 +56,11 @@ export default {
         <p>{{ openHours }}</p>
       </div>
       <div class="contacts">
-        <div class="phone flex">
-          <font-awesome-icon icon="fa-solid fa-phone" class="icon" />
-
-          <a href="">
-            <p>{{ phoneNumber }}</p>
+        <div class="flex" v-for="item in store.contacts.slice(0, 2)">
+          <font-awesome-icon :icon="item.icon" class="icon" />
+          <a :href="item.href">
+            <p>{{ item.text }}</p>
           </a>
-        </div>
-        <div class="email flex">
-          <font-awesome-icon icon="fa-solid fa-envelope" class="icon" />
-          <a href="">
-            <p>{{ email }}</p>
-          </a>
-
         </div>
         <div class="socials">
           <span v-for="item in arrSocials">

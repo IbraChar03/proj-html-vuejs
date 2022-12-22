@@ -14,6 +14,20 @@ export default {
                     subtitle: "We develop operational strategies to improve logistical efficiency"
                 },
 
+            ],
+            arrValues: [
+                {
+                    name: "Tradition"
+
+                },
+                {
+                    name: "Quality"
+
+                },
+                {
+                    name: "Security"
+
+                }
             ]
         }
     }
@@ -32,9 +46,7 @@ export default {
                     experienced and renowned professionals.
                 </div>
                 <div class="type">
-                    <span>Tradition</span>
-                    <span>Quality</span>
-                    <span>Security</span>
+                    <span v-for="item in arrValues">{{ item.name }}</span>
                 </div>
                 <div class="button">
                     <a href="">
