@@ -5,6 +5,7 @@ export default {
     return {
       openHours: "Open Hours: Mon - Sat - 9:00 - 18:00",
       store,
+      isActive: 0,
       list: [
         {
           name: "HOME",
@@ -42,6 +43,12 @@ export default {
       ]
 
     }
+  },
+  methods: {
+    activeLink(index) {
+      this.isActive = index
+
+    },
   }
 }
 
@@ -63,7 +70,7 @@ export default {
           </a>
         </div>
         <div class="socials">
-          <span v-for="item in arrSocials">
+          <span v-for="(item, index) in arrSocials" :key="index">
             <a href="">
               <font-awesome-icon :icon="item.icon" class="icon" />
             </a>
@@ -88,8 +95,8 @@ export default {
 
         <div class="list">
           <ul>
-            <li v-for="item in list">
-              <a :href=item.href>
+            <li v-for="(item, index) in list" :key="index">
+              <a :href=item.href @click="activeLink(index)" :class="isActive === index ? `active` : ``">
                 {{ item.name }}
 
               </a>
@@ -279,10 +286,17 @@ export default {
           li {
             list-style-type: none;
 
+
             a {
               color: #ededed;
               font-size: 17px;
               text-decoration: none;
+            }
+
+            .active {
+              position: relative;
+              width: 40%;
+              border-bottom: 3px solid #ededed;
             }
           }
 
