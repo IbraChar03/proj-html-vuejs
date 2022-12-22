@@ -5,15 +5,18 @@ export default {
             cardsArray: [
                 {
                     img: "/images/news-1.jpg",
-                    text: "Increasing creativity is possible for everyone"
+                    text: "Increasing creativity is possible for everyone",
+                    href: "#"
                 },
                 {
                     img: "/images/news-2.jpg",
-                    text: "Because market research is part of the business plan"
+                    text: "Because market research is part of the business plan",
+                    href: "#"
                 },
                 {
                     img: "/images/news-3.jpg",
-                    text: "Working from home is now a trend"
+                    text: "Working from home is now a trend",
+                    href: "#"
                 }
             ]
 
@@ -45,10 +48,11 @@ export default {
             <div class="cards">
                 <div class="card" v-for="item in cardsArray"
                     v-bind:style="{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url(' + item.img + ')' }">
-                    <!-- <img :src="item.img" alt=""> -->
-                    <span>
-                        {{ item.text }}
-                    </span>
+                    <a :href="item.href">
+                        <span>
+                            {{ item.text }}
+                        </span>
+                    </a>
                 </div>
             </div>
 

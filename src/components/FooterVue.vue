@@ -122,11 +122,11 @@ export default {
 
                         <font-awesome-icon :icon="item.icon" class="icon" />
 
-                        <span>{{ item.text }}</span>
+                        <a href=""> <span>{{ item.text }}</span> </a>
 
                     </div>
                 </div>
-                <a href="">
+                <a href="" class="btn">
                     <span>GET IN TOUCH</span>
                 </a>
 
@@ -161,7 +161,7 @@ export default {
                 Enjoy the low price. We are tracking any intention of privacy.
             </div>
             <div class="text">
-                &#169; NEXGEN is Proudly Powered by <span>Codings</span>.
+                &#169; NEXGEN is Proudly Powered by <a href=""> <span>Codings</span></a>.
             </div>
 
         </div>
@@ -237,24 +237,27 @@ export default {
                     margin-bottom: 10px;
                     display: flex;
 
+                    a {
+                        text-decoration: none;
+
+                        span {
+                            font-size: 18px;
+                            color: #c0c3d0;
+                        }
+                    }
+
                     .icon {
                         font-size: 15px;
                         color: #c0c3d0;
                         margin-right: 10px;
                     }
 
-                    span {
-                        font-size: 18px;
-                        color: #c0c3d0;
-                    }
                 }
             }
 
 
-            a {
+            .btn {
                 text-decoration: none;
-
-
 
                 span {
                     padding: 10px 17px;
@@ -358,10 +361,16 @@ export default {
             font-size: 15px;
             color: $color-type ;
 
-            span {
-                font-size: 15px;
-                color: $color-type-button;
+            a {
+                text-decoration: none;
+
+                span {
+                    font-size: 15px;
+                    color: $color-type-button;
+                }
             }
+
+
         }
     }
 }
