@@ -137,22 +137,20 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-bottom: 40px;
+                margin-bottom: 60px;
 
                 .percentage {
                     width: 30%;
 
-
-
                     .circle {
                         border-radius: 50%;
-                        width: 90px;
-                        height: 90px;
+                        width: 100px;
+                        height: 100px;
                         padding: 15px;
                         border: 8px solid #232328;
-                        color: white;
+                        color: #c0c3d0;
                         text-align: center;
-                        font-size: 30px;
+                        font-size: 32px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -161,8 +159,8 @@ export default {
 
                         span {
                             margin-top: 10px;
-                            font-size: 15px;
-                            color: white;
+                            font-size: 18px;
+                            color: #c0c3d0;
 
                         }
 
@@ -171,12 +169,13 @@ export default {
                         }
 
                         .margin {
-                            right: 56px;
+                            right: 62px;
                             position: relative;
                             display: block;
-                            height: 1px;
+                            height: 2px;
                             width: 8px;
                             background-color: $color-type-button;
+
                         }
                     }
 
