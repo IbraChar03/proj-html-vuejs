@@ -155,7 +155,7 @@ export default {
                     font-size: 15px;
                     background: url("/images/angle32.png") no-repeat right #dce2db;
                     -webkit-appearance: none;
-                    background-position-x: 255px;
+                    background-position-x: 275px;
                     cursor: pointer;
                 }
 
