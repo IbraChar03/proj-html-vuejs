@@ -207,7 +207,7 @@ export default {
 
     .inner-contImg {
         width: 50%;
-        height: 100%;
+        // height: 100%;
         // background-color: aquamarine;
         z-index: 1;
 

@@ -17,7 +17,8 @@ export default {
                     img: "/images/news-3.jpg",
                     text: "Working from home is now a trend",
                     href: "#"
-                }
+                },
+
             ]
 
         }
@@ -72,7 +73,7 @@ export default {
 
     .inner-cont {
         max-width: 1400px;
-        width: 60%;
+        width: 65%;
         height: 80%;
 
         .text {
@@ -130,11 +131,13 @@ export default {
             // background-color: brown;
             display: flex;
 
+            flex-wrap: wrap;
+
             .card {
-                width: calc(100% / 3 - 10px);
+                width: calc(100% / 3 - 20px);
                 padding: 150px;
                 border-radius: 5px;
-                margin: 0 10px;
+                margin: 10px;
                 // height: 360px;
                 position: relative;
                 background-size: cover;

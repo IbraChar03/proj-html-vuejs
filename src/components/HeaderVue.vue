@@ -27,6 +27,7 @@ export default {
           name: "BLOG",
           href: "#"
         },
+
       ],
 
       arrSocials: [
@@ -142,8 +143,6 @@ export default {
       </div>
 
     </div>
-
-
 
   </div>
 

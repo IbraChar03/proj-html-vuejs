@@ -36,6 +36,7 @@ export default {
                     ],
 
                 },
+
                 {
                     title: "Transport",
                     list: [
@@ -192,11 +193,12 @@ export default {
         width: 65%;
         height: 60%;
         display: flex;
+        flex-wrap: wrap;
         // background-color: red;
 
         .cont-nexgen {
-            width: calc(100% / 4 - 10px);
-            margin: 0px 10px;
+            width: calc(100% / 4 - 20px);
+            margin: 10px;
             height: 100%;
 
             .nexgen {
@@ -272,8 +274,8 @@ export default {
         }
 
         .card {
-            width: calc(100% / 4 - 10px);
-            margin: 0px 10px;
+            width: calc(100% / 4 - 20px);
+            margin: 10px;
             height: 100%;
             padding: 20px 0px;
             background-color: rgba(255, 255, 255, 0.02);

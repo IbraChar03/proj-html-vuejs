@@ -8,10 +8,11 @@ export default {
                     title: "Technology",
                     subtitle: "Focused on developing technology solutions adapted to our client's needs."
                 },
+
                 {
                     img: "/images/gallery-5.jpg",
                     title: "Transport",
-                    subtitle: "We develop operational strategies to improve logistical efficiency"
+                    subtitle: "We develop operational strategies to improve logistical efficiency."
                 },
 
             ],
@@ -68,7 +69,6 @@ export default {
                         {{ item.subtitle }}
                     </div>
 
-
                 </div>
 
             </div>
@@ -103,12 +103,14 @@ export default {
     .inner-cont {
         max-width: 1400px;
         width: 70%;
-        height: 420px;
+        // height: 420px;
+        padding: 10px;
         display: flex;
+        flex-wrap: wrap;
 
         .card {
-            width: calc(100% / 3);
-            // margin: 0px 5px;
+            width: calc(100% / 3 - 20px);
+            margin: 10px;
             height: 100%;
             // background-color: burlywood;
 
@@ -131,16 +133,19 @@ export default {
 
             .type {
                 width: 80%;
-                height: 50px;
+                // height: 50px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 25px;
 
                 span {
+                    width: calc(100% / 3 - 10px);
+                    margin: 5px;
+                    text-align: center;
                     color: $color-type-button;
                     background-color: rgba(5, 130, 131, 0.1);
-                    padding: 8px 14px;
+                    padding: 8px 5px;
                     border-radius: 2px;
                 }
             }
@@ -158,9 +163,10 @@ export default {
         }
 
         .card-white {
-            width: calc(100% / 3 - 10px);
-            margin: 0px 10px;
-            height: 100%;
+            width: calc(100% / 3 - 20px);
+            margin: 10px;
+            // height: 100%;
+            padding: 20px;
             background-color: white;
             display: flex;
             justify-content: center;
@@ -169,7 +175,7 @@ export default {
 
             .inner-card {
                 height: 80%;
-                width: 70%;
+                width: 80%;
 
                 .img {
                     width: 100%;
